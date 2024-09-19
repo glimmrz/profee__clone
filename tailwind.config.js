@@ -12,6 +12,7 @@ module.exports = {
         variant: "var(--variant)",
         mute: "var(--mute)",
         shade: "var(--shade)",
+        secondary: "var(--secondary)",
       },
       borderRadius: {
         "4xl": "4rem",

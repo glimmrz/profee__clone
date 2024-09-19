@@ -1,6 +1,7 @@
 import Example from "@/components/example";
 import Features from "@/components/features";
 import Hero from "@/components/hero";
+import MobileApp from "@/components/mobile-app";
 import Title from "@/components/title";
 
 const featureTitle = (
@@ -18,6 +19,7 @@ export default function Home() {
       <Hero />
       <Features title={featureTitle} />
       <Example />
+      <MobileApp />
     </div>
   );
 }
