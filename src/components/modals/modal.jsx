@@ -37,13 +37,13 @@ export default function Modal({
         onClick={handleClose}
       ></div>
       <div
-        className={`no-scrollbar absolute top-0 left-0 right-0 bottom-0 m-auto w-full h-fit max-h-full rounded-md bg-background translate-y-24 opacity-0 overflow-y-auto transition-all duration-300 md:w-[1000px] md:max-h-[95%] ${
+        className={`no-scrollbar absolute top-0 left-0 right-0 bottom-0 m-auto w-full h-fit max-h-full rounded-md bg-white translate-y-24 opacity-0 overflow-y-auto transition-all duration-300 md:w-[550px] md:max-h-[95%] ${
           showModal && "!opacity-100 !translate-y-0"
         } ${customStyles}`}
       >
         {/* Modal Header */}
         {(modalHeader || modalIcon) && (
-          <div className="border-b-[1px] border-shade sticky top-0 bg-background z-[5] md:static">
+          <div className="border-b-[1px] border-mute sticky top-0 bg-background z-[5] md:static">
             <Container>
               <div className="flex items-center justify-between">
                 <Heading title_md={modalHeader} />

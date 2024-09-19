@@ -2,6 +2,7 @@ import Navbar from "@/components/navbar";
 import "./globals.css";
 import { font } from "@/lib/font";
 import IframeModal from "@/components/modals/iframe-modal";
+import QrCodeModal from "@/components/modals/qr-code-modal";
 
 export default function RootLayout({ children }) {
   return (
@@ -10,6 +11,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <main>
           <IframeModal />
+          <QrCodeModal />
           {children}
         </main>
       </body>

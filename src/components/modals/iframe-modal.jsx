@@ -25,6 +25,7 @@ export default function IframeModal() {
       isOpen={iframeModal.isOpen}
       onClose={iframeModal.onClose}
       modalBody={modalBody}
+      customStyles="md:!w-[1000px]"
     />
   );
 }
