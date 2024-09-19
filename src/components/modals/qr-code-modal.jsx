@@ -8,11 +8,13 @@ export default function QrCodeModal() {
 
   const modalBody = (
     <div className="flex items-center justify-center">
-      <div className="bg-white w-[550px] p-12 rounded-2xl">
+      <div className="bg-white w-[550px] md:p-12 rounded-2xl">
         <Heading title="Download Profee app" />
-        <p className="text-base mt-4">Scan the QR code with a mobile device</p>
+        <p className="text-base mt-2 md:mt-4">
+          Scan the QR code with a mobile device
+        </p>
 
-        <div className="flex items-center justify-center mt-12">
+        <div className="flex items-center justify-center mt-8 md:mt-12">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="360"
