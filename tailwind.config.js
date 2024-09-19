@@ -8,8 +8,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "var(--primary)",
+        variant: "var(--variant)",
+        mute: "var(--mute)",
+        shade: "var(--shade)",
+      },
+      borderRadius: {
+        "4xl": "4rem",
       },
     },
   },
