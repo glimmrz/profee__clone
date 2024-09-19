@@ -14,7 +14,7 @@ export default function MobileApp() {
 
   return (
     <Section customStyles="bg-white">
-      <div className="grid grid-cols-2 gap-8">
+      <div className="grid md:grid-cols-2 gap-8">
         <div>
           <Title>
             Get the Profee <br />
