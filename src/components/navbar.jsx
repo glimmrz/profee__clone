@@ -5,7 +5,7 @@ import Button from "./button";
 
 export default function Navbar() {
   return (
-    <nav className="bg-transparent absolute w-full">
+    <nav className="bg-transparent absolute w-full z-50">
       <Container>
         <div className="flex justify-between">
           <div className="flex items-center gap-8">
