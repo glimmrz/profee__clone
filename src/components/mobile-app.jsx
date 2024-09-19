@@ -6,6 +6,7 @@ import Title from "./title";
 import CustomImage from "./custom-image";
 import playstore from "@/assets/playstore.png";
 import appstore from "@/assets/appstore.png";
+import mobile from "@/assets/phone.webp";
 import { useQrCodeModal } from "@/hooks/modal-controllers";
 
 export default function MobileApp() {
@@ -13,7 +14,7 @@ export default function MobileApp() {
 
   return (
     <Section customStyles="bg-white">
-      <div>
+      <div className="grid grid-cols-2 gap-8">
         <div>
           <Title>
             Get the Profee <br />
@@ -41,7 +42,12 @@ export default function MobileApp() {
             download via the QR code
           </span>
         </div>
-        <div></div>
+        {/* Auto scrollable mobile phone */}
+        <div className="h-[50vh] select-none">
+          <div>
+            <CustomImage src={mobile} />
+          </div>
+        </div>
       </div>
     </Section>
   );
