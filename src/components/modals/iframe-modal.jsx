@@ -6,7 +6,7 @@ export default function IframeModal() {
   const iframeModal = useIframeModal();
 
   const modalBody = (
-    <div className="h-[250px] md:h-[550px]">
+    <div className="h-[250px] md:h-[550px] md:w-[calc(theme(width.screen)-theme(gap.4))] lg:w-full">
       <iframe
         width="100%"
         height="100%"
