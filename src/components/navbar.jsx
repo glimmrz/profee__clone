@@ -13,7 +13,7 @@ export default function Navbar() {
               {/* Logo */}
               <Logo />
             </div>
-            <div>
+            <div className="hidden md:block">
               {/* Links */}
               <ul className="flex items-center gap-4">
                 <li className="cursor-pointer text-white text-base first-letter:capitalize hover:text-primary transition-colors duration-300">
@@ -31,7 +31,7 @@ export default function Navbar() {
               </ul>
             </div>
           </div>
-          <div className="flex items-center gap-4">
+          <div className="hidden md:flex items-center gap-4">
             {/* Buttons and language changer */}
             <Button variant="outline" label="log in" />
             <Button label="sign up" />

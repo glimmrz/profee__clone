@@ -7,7 +7,7 @@ import Title from "@/components/title";
 const featureTitle = (
   <Title>
     try <br />
-    profee <br />
+    profee <br className="hidden md:block" />
     transfers! <br />
     <span className="text-primary">they are...</span>
   </Title>
