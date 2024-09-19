@@ -6,7 +6,10 @@ import Title from "./title";
 
 export default function Hero() {
   return (
-    <Section customStyles="bg-[linear-gradient(180deg,#5a62ab,#d6daec)] md:bg-[url('../assets/hero.webp')] bg-cover bg-no-repeat bg-center !min-h-[95vh] !mt-0 z-10">
+    <Section
+      sectionStyles="!mt-14 md:!mt-28"
+      customStyles="bg-[linear-gradient(180deg,#5a62ab,#d6daec)] md:bg-[url('../assets/hero.webp')] bg-cover bg-no-repeat bg-center !mt-0 z-10"
+    >
       <div className="grid grid-cols-1 md:grid-cols-[1.5fr,1fr] lg:grid-cols-[2fr,1fr] gap-8 md:gap-4 lg:gap-12">
         <div className="text-white">
           <div className="w-full lg:w-4/6 md:mb-14 lg:mb-28">
