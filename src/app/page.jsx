@@ -14,6 +14,14 @@ const featureTitle = (
   </Title>
 );
 
+const secondFeatureTitle = (
+  <Title>
+    waltonpay <br />
+    transfers are <br />
+    <span className="text-[#00C48C]">100% safe</span>
+  </Title>
+);
+
 export default function Home() {
   return (
     <div>
@@ -22,6 +30,7 @@ export default function Home() {
       <Example />
       <MobileApp />
       <Family />
+      <Features title={secondFeatureTitle} />
     </div>
   );
 }
