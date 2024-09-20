@@ -8,6 +8,7 @@
   --mute: #b0b5be;
   --shade: #656c7b;
   --secondary: #7ddfc3;
+  --secondary_variant: #00c48c;
 }
 
 @layer utilities {

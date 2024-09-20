@@ -18,7 +18,7 @@ const secondFeatureTitle = (
   <Title>
     waltonpay <br />
     transfers are <br />
-    <span className="text-[#00C48C]">100% safe</span>
+    <span className="text-secondary_variant">100% safe</span>
   </Title>
 );
 
