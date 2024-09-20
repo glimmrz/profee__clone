@@ -1,4 +1,5 @@
 import Example from "@/components/example";
+import Family from "@/components/family";
 import Features from "@/components/features";
 import Hero from "@/components/hero";
 import MobileApp from "@/components/mobile-app";
@@ -20,6 +21,7 @@ export default function Home() {
       <Features title={featureTitle} />
       <Example />
       <MobileApp />
+      <Family />
     </div>
   );
 }

@@ -13,7 +13,7 @@ export default function MobileApp() {
   const codeModal = useQrCodeModal();
 
   return (
-    <Section customStyles="bg-white">
+    <Section customStyles="bg-white z-[7]">
       <div className="grid md:grid-cols-2 gap-8">
         <div>
           <Title>
