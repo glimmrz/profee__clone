@@ -4,6 +4,7 @@ import Family from "@/components/family";
 import Features from "@/components/features";
 import Hero from "@/components/hero";
 import MobileApp from "@/components/mobile-app";
+import Recognition from "@/components/recognition";
 import Title from "@/components/title";
 
 const featureTitle = (
@@ -93,6 +94,7 @@ export default function Home() {
       <Family />
       <Features features={featuresTwo} customStyles="!bg-[#EFF1FA] z-[5]" />
       <Care />
+      <Recognition />
     </div>
   );
 }
