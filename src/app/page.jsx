@@ -1,11 +1,13 @@
-import Care from "@/components/care";
+import Button from "@/components/button";
 import Example from "@/components/example";
 import Family from "@/components/family";
 import Features from "@/components/features";
+import Heading from "@/components/heading";
 import Hero from "@/components/hero";
 import MobileApp from "@/components/mobile-app";
 import Recognition from "@/components/recognition";
 import Title from "@/components/title";
+import TitleImage from "@/components/title-image";
 
 const featureTitle = (
   <Title>
@@ -93,8 +95,25 @@ export default function Home() {
       <MobileApp />
       <Family />
       <Features features={featuresTwo} customStyles="!bg-[#EFF1FA] z-[5]" />
-      <Care />
+      <TitleImage customStyles="z-[4]">
+        <Title>we care about you</Title>
+        <p className="text-shade">
+          Profee support specialists speak many languages and will help you with
+          any question you may have. Write us in chat, email help@profee.com or
+          call +357 22 000 253. The support team will answer you from 9:00 to
+          22:00 (UTC+03:00) Monday to Friday.
+        </p>
+        <Button label="send money" size="lg" />
+      </TitleImage>
       <Recognition />
+      <TitleImage reverse customStyles="z-[2]">
+        <Title>
+          Earn with <br /> <span className="text-primary">profee</span>
+        </Title>
+        <Heading subtitle="Refer our service to your friends, get rewarded when they start sending money." />
+
+        <Button label="send money" size="lg" />
+      </TitleImage>
     </div>
   );
 }
