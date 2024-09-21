@@ -1,8 +1,8 @@
 "use client";
 import Link from "next/link";
 import CustomImage from "./custom-image";
-import logo from "@/assets/logo.svg";
-import logo_d from "@/assets/logo-dark.svg";
+import logo from "@/assets/logo.png";
+import logo_d from "@/assets/logo.png";
 import { usePathname } from "next/navigation";
 
 export default function Logo() {

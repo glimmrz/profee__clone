@@ -29,11 +29,13 @@ export default function Navbar() {
                       : "text-black"
                   } text-sm first-letter:capitalize hover:text-primary transition-colors duration-300 ${
                     pathname.split("/")[1].replace(/-/, " ") === "send money"
-                      ? "bg-slate-200 rounded-md p-2 !text-black hover:!text-primary"
+                      ? "bg-slate-200 rounded-md !text-black hover:!text-primary"
                       : ""
                   }`}
                 >
-                  <Link href="/send-money">send money</Link>
+                  <Link className="p-2 block" href="/send-money">
+                    send money
+                  </Link>
                 </li>
                 <li
                   className={`cursor-pointer ${
@@ -42,11 +44,13 @@ export default function Navbar() {
                       : "text-black"
                   } text-sm first-letter:capitalize hover:text-primary transition-colors duration-300 ${
                     pathname.split("/")[1].replace(/-/, " ") === "media"
-                      ? "bg-slate-200 rounded-md p-2 !text-black hover:!text-primary"
+                      ? "bg-slate-200 rounded-md !text-black hover:!text-primary"
                       : ""
                   }`}
                 >
-                  <Link href="/media">media</Link>
+                  <Link className="p-2 block" href="/media">
+                    media
+                  </Link>
                 </li>
                 <li
                   className={`cursor-pointer ${
@@ -55,11 +59,13 @@ export default function Navbar() {
                       : "text-black"
                   } text-sm first-letter:capitalize hover:text-primary transition-colors duration-300 ${
                     pathname.split("/")[1].replace(/-/, " ") === "blog"
-                      ? "bg-slate-200 rounded-md p-2 !text-black hover:!text-primary"
+                      ? "bg-slate-200 rounded-md !text-black hover:!text-primary"
                       : ""
                   }`}
                 >
-                  <Link href="/blog">blog</Link>
+                  <Link className="p-2 block" href="/blog">
+                    blog
+                  </Link>
                 </li>
                 <li
                   className={`cursor-pointer ${
@@ -68,11 +74,13 @@ export default function Navbar() {
                       : "text-black"
                   } text-sm first-letter:capitalize hover:text-primary transition-colors duration-300 ${
                     pathname.split("/")[1].replace(/-/, " ") === "about us"
-                      ? "bg-slate-200 rounded-md p-2 !text-black hover:!text-primary"
+                      ? "bg-slate-200 rounded-md !text-black hover:!text-primary"
                       : ""
                   }`}
                 >
-                  <Link href="#">about us</Link>
+                  <Link className="p-2 block" href="#">
+                    about us
+                  </Link>
                 </li>
               </ul>
             </div>
