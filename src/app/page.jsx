@@ -6,8 +6,11 @@ import Heading from "@/components/heading";
 import Hero from "@/components/hero";
 import MobileApp from "@/components/mobile-app";
 import Recognition from "@/components/recognition";
+import Reviews from "@/components/reviews";
 import Title from "@/components/title";
 import TitleImage from "@/components/title-image";
+import care from "@/assets/care.webp";
+import ua from "@/assets/ua.webp";
 
 const featureTitle = (
   <Title>
@@ -95,7 +98,7 @@ export default function Home() {
       <MobileApp />
       <Family />
       <Features features={featuresTwo} customStyles="!bg-[#EFF1FA] z-[5]" />
-      <TitleImage customStyles="z-[4]">
+      <TitleImage customStyles="z-[4]" image={care}>
         <Title>we care about you</Title>
         <p className="text-shade">
           Profee support specialists speak many languages and will help you with
@@ -106,7 +109,7 @@ export default function Home() {
         <Button label="send money" size="lg" />
       </TitleImage>
       <Recognition />
-      <TitleImage reverse customStyles="z-[2]">
+      <TitleImage reverse customStyles="z-[2]" image={ua}>
         <Title>
           Earn with <br /> <span className="text-primary">profee</span>
         </Title>
@@ -114,6 +117,7 @@ export default function Home() {
 
         <Button label="send money" size="lg" />
       </TitleImage>
+      <Reviews />
     </div>
   );
 }

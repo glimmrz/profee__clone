@@ -1,9 +1,10 @@
-import { Activity, TimerReset, X } from "lucide-react";
+import { Activity, ArrowRight, TimerReset, X } from "lucide-react";
 
 const Icons = {
   stock: Activity,
   timer: TimerReset,
   close: X,
+  arrowRight: ArrowRight,
   star: (props) => (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" {...props}>
       <path

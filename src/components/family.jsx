@@ -5,8 +5,8 @@ import Title from "./title";
 
 export default function Family() {
   return (
-    <Section customStyles="bg-[url('../assets/family.webp')] bg-no-repeat bg-cover bg-center z-[6]">
-      <div className="flex flex-col items-center justify-center gap-4 text-white mt-96">
+    <Section customStyles="bg-[url('../assets/family.webp')] bg-no-repeat bg-cover bg-center !min-h-[80vh] z-[6]">
+      <div className="flex flex-col items-center justify-center gap-4 text-white mt-96 text-center">
         <Title>Your friends & family</Title>
         <Heading subtitle="Do not need to sign up to get the money. Ask them to give you their account's details and... to relax." />
         <Button size="lg" label="send money" />
