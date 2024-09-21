@@ -4,19 +4,14 @@ import MediaSection from "@/components/media-section";
 export default function Page() {
   return (
     <div>
-      <MediaSection title="News and updates">
-        <MediaCard />
-        <MediaCard />
-        <MediaCard />
-        <MediaCard />
-        <MediaCard />
+      <MediaSection category="Life in Europe" reverse>
         <MediaCard />
         <MediaCard />
         <MediaCard />
         <MediaCard />
         <MediaCard />
       </MediaSection>
-      <MediaSection title="In the news">
+      <MediaSection category="Life in the UK" reverse>
         <MediaCard />
         <MediaCard />
         <MediaCard />

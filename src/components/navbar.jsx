@@ -44,7 +44,7 @@ export default function Navbar() {
                       : ""
                   }`}
                 >
-                  <Link href="media">media</Link>
+                  <Link href="/media">media</Link>
                 </li>
                 <li
                   className={`cursor-pointer ${
@@ -57,7 +57,7 @@ export default function Navbar() {
                       : ""
                   }`}
                 >
-                  <Link href="#">blog</Link>
+                  <Link href="/blog">blog</Link>
                 </li>
                 <li
                   className={`cursor-pointer ${
