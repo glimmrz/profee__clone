@@ -7,7 +7,7 @@ import MediaSection from "@/components/media-section";
 export default function Page() {
   return (
     <Container>
-      <div className="pt-20">
+      <div className="pt-16">
         <Heading title="Blog" />
 
         <div className="mt-8 flex flex-wrap gap-4">

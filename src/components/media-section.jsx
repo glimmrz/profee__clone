@@ -5,7 +5,7 @@ import Icon from "./icon";
 
 export default function MediaSection({ title, category, children, reverse }) {
   return (
-    <section className="pt-20">
+    <section className="pt-16">
       <Container>
         {title && <Heading title={title} />}
         {category && (

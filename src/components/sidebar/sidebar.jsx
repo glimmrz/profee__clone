@@ -53,7 +53,7 @@ export default function Sidebar() {
             onClick={handleClose}
             className="first-letter:capitalize hover:text-slate-400 transition-colors duration-300 text-sm"
           >
-            <Link className="pt-2 pb-2 h-full w-full" href="/send-money">
+            <Link className="pt-3 pb-3 h-full w-full block" href="/send-money">
               send money
             </Link>
           </li>
@@ -61,7 +61,7 @@ export default function Sidebar() {
             onClick={handleClose}
             className="first-letter:capitalize hover:text-slate-400 transition-colors duration-300 text-sm"
           >
-            <Link className="pt-2 pb-2 h-full w-full" href="/media">
+            <Link className="pt-3 pb-3 h-full w-full block" href="/media">
               media
             </Link>
           </li>
@@ -69,7 +69,7 @@ export default function Sidebar() {
             onClick={handleClose}
             className="first-letter:capitalize hover:text-slate-400 transition-colors duration-300 text-sm"
           >
-            <Link className="pt-2 pb-2 h-full w-full" href="/blog">
+            <Link className="pt-3 pb-3 h-full w-full block" href="/blog">
               blog
             </Link>
           </li>
@@ -77,7 +77,7 @@ export default function Sidebar() {
             onClick={handleClose}
             className="first-letter:capitalize hover:text-slate-400 transition-colors duration-300 text-sm"
           >
-            <Link className="pt-2 pb-2 h-full w-full" href="/about-us">
+            <Link className="pt-3 pb-3 h-full w-full block" href="/about-us">
               about us
             </Link>
           </li>

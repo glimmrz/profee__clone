@@ -2,7 +2,6 @@ import Button from "@/components/button";
 import Example from "@/components/example";
 import Features from "@/components/features";
 import Heading from "@/components/heading";
-import Hero from "@/components/hero";
 import MobileApp from "@/components/mobile-app";
 import Recognition from "@/components/recognition";
 import Reviews from "@/components/reviews";
@@ -11,6 +10,7 @@ import TitleImage from "@/components/title-image";
 import ua from "@/assets/ua.webp";
 import SupportedCountries from "@/components/supported-countries";
 import TitleImageVariant from "@/components/title-image-variant";
+import HeroVariant from "@/components/hero-variant";
 
 const featureTitle = (
   <Title>
@@ -92,9 +92,9 @@ const featuresTwo = {
 export default function Home() {
   return (
     <div>
-      <Hero
+      <HeroVariant
         title="Send money now – with 0% fee"
-        customStyles="md:bg-[url('../assets/send-bg.webp')]"
+        customStyles="bg-[url('../assets/send-bg.webp')]"
       />
       <Features features={featuresOne} customStyles="z-[9]" />
       <Example />
@@ -106,9 +106,9 @@ export default function Home() {
       />
       <Features features={featuresTwo} customStyles="!bg-[#EFF1FA] z-[5]" />
       <TitleImageVariant
-        title="Your friends & family"
+        title="we care about you"
         subtitle="Do not need to sign up to get the money. Ask them to give you their account's details and... to relax."
-        customStyles="bg-[url('../assets/care-bg.webp')]"
+        customStyles="bg-[url('../assets/care-bg.webp')] !z-[4] bg-right"
       />
       <Recognition />
       <TitleImage reverse customStyles="z-[2]" image={ua}>
