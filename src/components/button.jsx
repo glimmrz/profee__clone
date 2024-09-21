@@ -17,7 +17,7 @@ export default function Button({
 
   const sizes = {
     lg: "!pt-3 !pb-3 !pl-6 !pr-6 uppercase !text-2xl !font-extrabold !rounded-2xl",
-    xl: "!pt-5 !pb-5 !pl-6 !pr-6 uppercase !text-3xl !font-extrabold !rounded-2xl",
+    xl: "!pt-3 !pb-3 md:!pt-5 md:!pb-5 !pl-6 !pr-6 uppercase !text-2xl md:!text-3xl !font-extrabold !rounded-2xl",
   };
 
   return (
