@@ -8,7 +8,6 @@ import Recognition from "@/components/recognition";
 import Reviews from "@/components/reviews";
 import Title from "@/components/title";
 import TitleImage from "@/components/title-image";
-import care from "@/assets/care.webp";
 import ua from "@/assets/ua.webp";
 import SupportedCountries from "@/components/supported-countries";
 import TitleImageVariant from "@/components/title-image-variant";
@@ -94,8 +93,8 @@ export default function Home() {
   return (
     <div>
       <Hero
-        title="Reliable and fast way to send money overseas"
-        customStyles="md:bg-[url('../assets/hero.webp')]"
+        title="Send money now – with 0% fee"
+        customStyles="md:bg-[url('../assets/send-bg.webp')]"
       />
       <Features features={featuresOne} customStyles="z-[9]" />
       <Example />
@@ -106,16 +105,11 @@ export default function Home() {
         customStyles="bg-[url('../assets/family.webp')]"
       />
       <Features features={featuresTwo} customStyles="!bg-[#EFF1FA] z-[5]" />
-      <TitleImage customStyles="z-[4]" image={care}>
-        <Title>we care about you</Title>
-        <p className="text-shade">
-          Profee support specialists speak many languages and will help you with
-          any question you may have. Write us in chat, email help@profee.com or
-          call +357 22 000 253. The support team will answer you from 9:00 to
-          22:00 (UTC+03:00) Monday to Friday.
-        </p>
-        <Button label="send money" size="lg" />
-      </TitleImage>
+      <TitleImageVariant
+        title="Your friends & family"
+        subtitle="Do not need to sign up to get the money. Ask them to give you their account's details and... to relax."
+        customStyles="bg-[url('../assets/care-bg.webp')]"
+      />
       <Recognition />
       <TitleImage reverse customStyles="z-[2]" image={ua}>
         <Title>

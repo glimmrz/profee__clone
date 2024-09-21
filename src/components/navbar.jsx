@@ -17,7 +17,7 @@ export default function Navbar() {
               {/* Links */}
               <ul className="flex items-center gap-4">
                 <li className="cursor-pointer text-white text-base first-letter:capitalize hover:text-primary transition-colors duration-300">
-                  <Link href="#">send money</Link>
+                  <Link href="/send-money">send money</Link>
                 </li>
                 <li className="cursor-pointer text-white text-base first-letter:capitalize hover:text-primary transition-colors duration-300">
                   <Link href="#">media</Link>
