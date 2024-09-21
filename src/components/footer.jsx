@@ -71,9 +71,9 @@ export default function Footer() {
               </div>
 
               {/* Payment cards */}
-              <div class="flex gap-4 justify-between md:justify-start">
+              <div className="flex gap-4 justify-between md:justify-start">
                 <svg
-                  class="PromoPaysysIcon_icon__tU55g PromoPaysysIcon_visa__oQ82l PromoPaysysIcon_icon__tU55g PromoPaysysIcon_icon_xs__8ae6Q PromoPaysysIcon_icon_svg__dO_VR"
+                  className="PromoPaysysIcon_icon__tU55g PromoPaysysIcon_visa__oQ82l PromoPaysysIcon_icon__tU55g PromoPaysysIcon_icon_xs__8ae6Q PromoPaysysIcon_icon_svg__dO_VR"
                   width="52"
                   height="16"
                   viewBox="0 0 52 16"
@@ -88,7 +88,7 @@ export default function Footer() {
                   ></path>
                 </svg>
                 <svg
-                  class="PromoPaysysIcon_icon__tU55g PromoPaysysIcon_visa-electron__k9YFS PromoPaysysIcon_icon__tU55g PromoPaysysIcon_icon_xs__8ae6Q PromoPaysysIcon_icon_svg__dO_VR"
+                  className="PromoPaysysIcon_icon__tU55g PromoPaysysIcon_visa-electron__k9YFS PromoPaysysIcon_icon__tU55g PromoPaysysIcon_icon_xs__8ae6Q PromoPaysysIcon_icon_svg__dO_VR"
                   width="32"
                   height="20"
                   viewBox="2 2 32 20"
@@ -103,7 +103,7 @@ export default function Footer() {
                   ></path>
                 </svg>
                 <svg
-                  class="PromoPaysysIcon_icon__tU55g PromoPaysysIcon_mastercard__TUYsO PromoPaysysIcon_icon__tU55g PromoPaysysIcon_icon_xs__8ae6Q PromoPaysysIcon_icon_svg__dO_VR"
+                  className="PromoPaysysIcon_icon__tU55g PromoPaysysIcon_mastercard__TUYsO PromoPaysysIcon_icon__tU55g PromoPaysysIcon_icon_xs__8ae6Q PromoPaysysIcon_icon_svg__dO_VR"
                   width="31"
                   height="20"
                   viewBox="0 0 31 20"
@@ -126,7 +126,7 @@ export default function Footer() {
                   ></path>
                 </svg>
                 <svg
-                  class="PromoPaysysIcon_icon__tU55g PromoPaysysIcon_verified-by-visa__6qQQA PromoPaysysIcon_icon__tU55g PromoPaysysIcon_icon_xs__8ae6Q PromoPaysysIcon_icon_svg__dO_VR"
+                  className="PromoPaysysIcon_icon__tU55g PromoPaysysIcon_verified-by-visa__6qQQA PromoPaysysIcon_icon__tU55g PromoPaysysIcon_icon_xs__8ae6Q PromoPaysysIcon_icon_svg__dO_VR"
                   width="37"
                   height="18"
                   viewBox="0 0 37 18"
@@ -191,7 +191,7 @@ export default function Footer() {
                   ></path>
                 </svg>
                 <svg
-                  class="PromoPaysysIcon_icon__tU55g PromoPaysysIcon_mastercard-secure-code__sB75K PromoPaysysIcon_icon__tU55g PromoPaysysIcon_icon_xs__8ae6Q PromoPaysysIcon_icon_svg__dO_VR"
+                  className="PromoPaysysIcon_icon__tU55g PromoPaysysIcon_mastercard-secure-code__sB75K PromoPaysysIcon_icon__tU55g PromoPaysysIcon_icon_xs__8ae6Q PromoPaysysIcon_icon_svg__dO_VR"
                   width="52"
                   height="18"
                   viewBox="0 0 52 18"
@@ -338,7 +338,7 @@ export default function Footer() {
                   ></path>
                 </svg>
                 <svg
-                  class="PromoPaysysIcon_icon__tU55g PromoPaysysIcon_pci__7uDQs PromoPaysysIcon_icon__tU55g PromoPaysysIcon_icon_xs__8ae6Q PromoPaysysIcon_icon_svg__dO_VR"
+                  className="PromoPaysysIcon_icon__tU55g PromoPaysysIcon_pci__7uDQs PromoPaysysIcon_icon__tU55g PromoPaysysIcon_icon_xs__8ae6Q PromoPaysysIcon_icon_svg__dO_VR"
                   width="47"
                   height="18"
                   viewBox="0 0 47 18"

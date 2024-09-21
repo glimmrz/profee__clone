@@ -10,7 +10,7 @@ export default function Button({
 }) {
   const variants = {
     primary: "bg-primary text-white hover:bg-variant",
-    outline: "bg-transparent border-variant text-white hover:border-primary",
+    outline: "bg-transparent border-variant text-primary hover:border-primary",
     close: "bg-transparent rounded-full",
   };
 

@@ -4,20 +4,22 @@ import Container from "./container";
 import Logo from "./logo";
 import Button from "./button";
 import { usePathname } from "next/navigation";
+import Icon from "./icon";
+import { useSidebar } from "@/hooks/modal-controllers";
 
 export default function Navbar() {
   const pathname = usePathname();
-  console.log(pathname);
+  const sidebar = useSidebar();
+
   return (
     <nav className="bg-transparent absolute w-full z-50">
       <Container>
-        <div className="flex justify-between">
+        <div className="flex justify-between items-center">
           <div className="flex items-center gap-8">
-            <div>
-              {/* Logo */}
-              <Logo />
-            </div>
-            <div className="hidden md:block">
+            {/* Logo */}
+            <Logo />
+
+            <div className="hidden lg:block">
               {/* Links */}
               <ul className="flex items-center gap-4">
                 <li
@@ -75,10 +77,18 @@ export default function Navbar() {
               </ul>
             </div>
           </div>
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-4">
             {/* Buttons and language changer */}
             <Button variant="outline" label="log in" />
             <Button label="sign up" />
+          </div>
+
+          <div
+            className="lg:hidden text-white"
+            role="button"
+            onClick={sidebar.onOpen}
+          >
+            <Icon icon="menu" size={28} />
           </div>
         </div>
       </Container>
