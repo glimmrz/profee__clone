@@ -27,7 +27,7 @@ export default function Navbar() {
                       : "text-black"
                   } text-sm first-letter:capitalize hover:text-primary transition-colors duration-300 ${
                     pathname.split("/")[1].replace(/-/, " ") === "send money"
-                      ? "bg-mute rounded-md p-2 !text-black hover:!text-primary"
+                      ? "bg-slate-200 rounded-md p-2 !text-black hover:!text-primary"
                       : ""
                   }`}
                 >
@@ -40,7 +40,7 @@ export default function Navbar() {
                       : "text-black"
                   } text-sm first-letter:capitalize hover:text-primary transition-colors duration-300 ${
                     pathname.split("/")[1].replace(/-/, " ") === "media"
-                      ? "bg-mute rounded-md p-2 !text-black hover:!text-primary"
+                      ? "bg-slate-200 rounded-md p-2 !text-black hover:!text-primary"
                       : ""
                   }`}
                 >
@@ -53,7 +53,7 @@ export default function Navbar() {
                       : "text-black"
                   } text-sm first-letter:capitalize hover:text-primary transition-colors duration-300 ${
                     pathname.split("/")[1].replace(/-/, " ") === "blog"
-                      ? "bg-mute rounded-md p-2 !text-black hover:!text-primary"
+                      ? "bg-slate-200 rounded-md p-2 !text-black hover:!text-primary"
                       : ""
                   }`}
                 >
@@ -66,7 +66,7 @@ export default function Navbar() {
                       : "text-black"
                   } text-sm first-letter:capitalize hover:text-primary transition-colors duration-300 ${
                     pathname.split("/")[1].replace(/-/, " ") === "about us"
-                      ? "bg-mute rounded-md p-2 !text-black hover:!text-primary"
+                      ? "bg-slate-200 rounded-md p-2 !text-black hover:!text-primary"
                       : ""
                   }`}
                 >
