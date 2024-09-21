@@ -11,6 +11,7 @@ import Title from "@/components/title";
 import TitleImage from "@/components/title-image";
 import care from "@/assets/care.webp";
 import ua from "@/assets/ua.webp";
+import SupportedCountries from "@/components/supported-countries";
 
 const featureTitle = (
   <Title>
@@ -118,6 +119,7 @@ export default function Home() {
         <Button label="send money" size="lg" />
       </TitleImage>
       <Reviews />
+      <SupportedCountries />
     </div>
   );
 }

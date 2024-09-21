@@ -8,7 +8,7 @@ import Icon from "./icon";
 
 export default function Reviews() {
   return (
-    <Section customStyles="bg-secondary_variant !min-h-fit">
+    <Section customStyles="bg-secondary_variant !min-h-fit z-[1]">
       <div className="flex flex-col justify-center items-center">
         <div className="text-white max-w-4xl w-full text-center mb-8 md:mb-24">
           <Title>
