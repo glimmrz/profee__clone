@@ -12,7 +12,7 @@ export default function Reviews() {
       <div className="flex flex-col justify-center items-center">
         <div className="text-white max-w-4xl w-full text-center mb-8 md:mb-24">
           <Title>
-            profee is trusted <br /> by thousands of clients
+            WaltonPay is trusted <br /> by thousands of clients
           </Title>
         </div>
         {/* Review cards */}
@@ -39,10 +39,10 @@ export default function Reviews() {
                 interface and all needed data is visible like fees which is
                 positive being transparent. The app service is great, like the
                 transfers are fast and the exchange rate is very good! The
-                customer support team at Profee is very helpful & responsive. I
-                had a few questions when I first started using the app, and they
-                were quick to provide clear and helpful answers. Also, the level
-                upgrade journey was smooth. Recommend it!
+                customer support team at WaltonPay is very helpful & responsive.
+                I had a few questions when I first started using the app, and
+                they were quick to provide clear and helpful answers. Also, the
+                level upgrade journey was smooth. Recommend it!
               </p>
 
               <div className="flex justify-between items-center">
@@ -59,10 +59,10 @@ export default function Reviews() {
                 interface and all needed data is visible like fees which is
                 positive being transparent. The app service is great, like the
                 transfers are fast and the exchange rate is very good! The
-                customer support team at Profee is very helpful & responsive. I
-                had a few questions when I first started using the app, and they
-                were quick to provide clear and helpful answers. Also, the level
-                upgrade journey was smooth. Recommend it!
+                customer support team at WaltonPay is very helpful & responsive.
+                I had a few questions when I first started using the app, and
+                they were quick to provide clear and helpful answers. Also, the
+                level upgrade journey was smooth. Recommend it!
               </p>
 
               <div className="flex justify-between items-center">
@@ -79,10 +79,10 @@ export default function Reviews() {
                 interface and all needed data is visible like fees which is
                 positive being transparent. The app service is great, like the
                 transfers are fast and the exchange rate is very good! The
-                customer support team at Profee is very helpful & responsive. I
-                had a few questions when I first started using the app, and they
-                were quick to provide clear and helpful answers. Also, the level
-                upgrade journey was smooth. Recommend it!
+                customer support team at WaltonPay is very helpful & responsive.
+                I had a few questions when I first started using the app, and
+                they were quick to provide clear and helpful answers. Also, the
+                level upgrade journey was smooth. Recommend it!
               </p>
 
               <div className="flex justify-between items-center">
@@ -99,10 +99,10 @@ export default function Reviews() {
                 interface and all needed data is visible like fees which is
                 positive being transparent. The app service is great, like the
                 transfers are fast and the exchange rate is very good! The
-                customer support team at Profee is very helpful & responsive. I
-                had a few questions when I first started using the app, and they
-                were quick to provide clear and helpful answers. Also, the level
-                upgrade journey was smooth. Recommend it!
+                customer support team at WaltonPay is very helpful & responsive.
+                I had a few questions when I first started using the app, and
+                they were quick to provide clear and helpful answers. Also, the
+                level upgrade journey was smooth. Recommend it!
               </p>
 
               <div className="flex justify-between items-center">
@@ -119,10 +119,10 @@ export default function Reviews() {
                 interface and all needed data is visible like fees which is
                 positive being transparent. The app service is great, like the
                 transfers are fast and the exchange rate is very good! The
-                customer support team at Profee is very helpful & responsive. I
-                had a few questions when I first started using the app, and they
-                were quick to provide clear and helpful answers. Also, the level
-                upgrade journey was smooth. Recommend it!
+                customer support team at WaltonPay is very helpful & responsive.
+                I had a few questions when I first started using the app, and
+                they were quick to provide clear and helpful answers. Also, the
+                level upgrade journey was smooth. Recommend it!
               </p>
 
               <div className="flex justify-between items-center">
@@ -139,10 +139,10 @@ export default function Reviews() {
                 interface and all needed data is visible like fees which is
                 positive being transparent. The app service is great, like the
                 transfers are fast and the exchange rate is very good! The
-                customer support team at Profee is very helpful & responsive. I
-                had a few questions when I first started using the app, and they
-                were quick to provide clear and helpful answers. Also, the level
-                upgrade journey was smooth. Recommend it!
+                customer support team at WaltonPay is very helpful & responsive.
+                I had a few questions when I first started using the app, and
+                they were quick to provide clear and helpful answers. Also, the
+                level upgrade journey was smooth. Recommend it!
               </p>
 
               <div className="flex justify-between items-center">

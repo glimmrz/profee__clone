@@ -9,7 +9,7 @@ export default function QrCodeModal() {
   const modalBody = (
     <div className="flex items-center justify-center">
       <div className="bg-white w-[550px] md:p-12 rounded-2xl">
-        <Heading title="Download Profee app" />
+        <Heading title="Download WaltonPay app" />
         <p className="text-base mt-2 md:mt-4">
           Scan the QR code with a mobile device
         </p>

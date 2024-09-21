@@ -17,7 +17,7 @@ export default function MobileApp() {
       <div className="grid md:grid-cols-2 gap-8">
         <div>
           <Title>
-            Get the Profee <br />
+            Get the WaltonPay <br />
             <span className="text-primary">mobile app</span>
           </Title>
           <div className="text-shade mt-6">
@@ -25,7 +25,7 @@ export default function MobileApp() {
           </div>
 
           {/* Store links */}
-          <div className="flex gap-2 mt-16">
+          <div className="flex gap-2 mt-12 md:mt-16">
             <Link href="#" className="rounded-md overflow-hidden">
               <CustomImage src={playstore} alt="" />
             </Link>

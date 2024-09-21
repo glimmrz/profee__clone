@@ -14,7 +14,7 @@ export default function Example() {
       <div className="grid md:grid-cols-[1fr,1fr] lg:grid-cols-[1fr,2fr] items-center">
         <div className="text-white mb-16 md:mb-0 lg:mb-16">
           <Title>
-            Profee transfers are simple: <br />
+            WaltonPay transfers are simple: <br />
             <span className="text-secondary">see for yourself</span>
           </Title>
         </div>

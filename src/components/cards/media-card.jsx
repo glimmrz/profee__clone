@@ -26,9 +26,9 @@ export default function MediaCard() {
             </div>
           </div>
 
-          <Heading subtitle="Profee supports the Filipino female volleyball team from Denmark" />
+          <Heading subtitle="WaltonPay supports the Filipino female volleyball team from Denmark" />
           <p className="text-shade">
-            Profee supports the Filipino female volleyball team from Denmark
+            WaltonPay supports the Filipino female volleyball team from Denmark
           </p>
         </div>
       </Link>

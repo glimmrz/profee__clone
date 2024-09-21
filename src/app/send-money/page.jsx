@@ -15,7 +15,7 @@ import HeroVariant from "@/components/hero-variant";
 const featureTitle = (
   <Title>
     try <br />
-    profee <br className="hidden md:block" />
+    WaltonPay <br className="hidden md:block" />
     transfers! <br />
     <span className="text-primary">they are...</span>
   </Title>
@@ -113,7 +113,7 @@ export default function Home() {
       <Recognition />
       <TitleImage reverse customStyles="z-[2]" image={ua}>
         <Title>
-          Earn with <br /> <span className="text-primary">profee</span>
+          Earn with <br /> <span className="text-primary">WaltonPay</span>
         </Title>
         <Heading subtitle="Refer our service to your friends, get rewarded when they start sending money." />
 

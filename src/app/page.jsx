@@ -16,7 +16,7 @@ import TitleImageVariant from "@/components/title-image-variant";
 const featureTitle = (
   <Title>
     try <br />
-    profee <br className="hidden md:block" />
+    WaltonPay <br className="hidden md:block" />
     transfers! <br />
     <span className="text-primary">they are...</span>
   </Title>
@@ -109,17 +109,17 @@ export default function Home() {
       <TitleImage customStyles="z-[4]" image={care}>
         <Title>we care about you</Title>
         <p className="text-shade">
-          Profee support specialists speak many languages and will help you with
-          any question you may have. Write us in chat, email help@profee.com or
-          call +357 22 000 253. The support team will answer you from 9:00 to
-          22:00 (UTC+03:00) Monday to Friday.
+          WaltonPay support specialists speak many languages and will help you
+          with any question you may have. Write us in chat, email
+          help@WaltonPay.com or call +357 22 000 253. The support team will
+          answer you from 9:00 to 22:00 (UTC+03:00) Monday to Friday.
         </p>
         <Button label="send money" size="lg" />
       </TitleImage>
       <Recognition />
       <TitleImage reverse customStyles="z-[2]" image={ua}>
         <Title>
-          Earn with <br /> <span className="text-primary">profee</span>
+          Earn with <br /> <span className="text-primary">WaltonPay</span>
         </Title>
         <Heading subtitle="Refer our service to your friends, get rewarded when they start sending money." />
 

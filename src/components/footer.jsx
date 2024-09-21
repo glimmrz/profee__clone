@@ -407,19 +407,17 @@ export default function Footer() {
           {/* Details */}
           <div className="grid gap-4 mt-12">
             <p>
-              Profee is a registered trade name under Sibilla Solutions LTD.
-              Sibilla Solutions LTD, registered in Cyprus (Registration No.
-              HE348581), is regulated as an Electronic Money Institution (EMI)
-              by the Central Bank of Cyprus (License No. 115.1.3.16/2018), VAT
-              СY10348581D. If you reside in the EU, our services are provided by
-              Sibilla Solutions LTD.
+              We process payments on our secure, SSL-encrypted platform, and
+              have security specialists and fraud detection systems to protect
+              you and your buyers 24/7.
             </p>
 
             <p>
-              For UK residents, our services are provided by Paymentz Ltd.
-              Paymentz Ltd is incorporated in the United Kingdom (Company No.
-              12431685) and is licensed by the Financial Conduct Authority (FCA)
-              under the Payment Institution regulations (License Nо. 924263).
+              WaltonPay Ltd is a division of GCC Exchange Ltd. © WaltonPay 2024.
+              All Rights Reserved.Member GCC Exchange Ltd. Because we want to
+              make sure we&apos;re doing a good job, we may monitor or record
+              our calls. We hope you don&apos;t mind. This website is designed
+              for use in the United Kingdom.
             </p>
 
             <p>© 2024 All rights reserved.</p>
