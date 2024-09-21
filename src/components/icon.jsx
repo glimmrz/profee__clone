@@ -1,6 +1,7 @@
 import {
   Activity,
   ArrowRight,
+  Eye,
   Facebook,
   Instagram,
   Linkedin,
@@ -16,6 +17,7 @@ const Icons = {
   facebook: Facebook,
   instagram: Instagram,
   linkedin: Linkedin,
+  eye: Eye,
   star: (props) => (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" {...props}>
       <path
