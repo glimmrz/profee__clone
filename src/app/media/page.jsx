@@ -1,18 +1,23 @@
 import MediaCard from "@/components/cards/media-card";
-import SectionWithHeader from "@/components/section-with-header";
+import MediaSection from "@/components/media-section";
 
 export default function Page() {
   return (
-    <SectionWithHeader>
-      <div className="mt-12">
-        <div className="grid grid-cols-3 gap-4">
-          <MediaCard />
-          <MediaCard />
-          <MediaCard />
-          <MediaCard />
-          <MediaCard />
-        </div>
-      </div>
-    </SectionWithHeader>
+    <div>
+      <MediaSection title="News and updates">
+        <MediaCard />
+        <MediaCard />
+        <MediaCard />
+        <MediaCard />
+        <MediaCard />
+      </MediaSection>
+      <MediaSection title="In the news">
+        <MediaCard />
+        <MediaCard />
+        <MediaCard />
+        <MediaCard />
+        <MediaCard />
+      </MediaSection>
+    </div>
   );
 }
