@@ -1,3 +1,4 @@
+import Care from "@/components/care";
 import Example from "@/components/example";
 import Family from "@/components/family";
 import Features from "@/components/features";
@@ -90,7 +91,8 @@ export default function Home() {
       <Example />
       <MobileApp />
       <Family />
-      <Features features={featuresTwo} customStyles="bg-[#EFF1FA]" />
+      <Features features={featuresTwo} customStyles="!bg-[#EFF1FA] z-[5]" />
+      <Care />
     </div>
   );
 }
