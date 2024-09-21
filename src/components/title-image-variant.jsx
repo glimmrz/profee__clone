@@ -11,7 +11,7 @@ export default function TitleImageVariant({ title, subtitle, customStyles }) {
       <div className="flex flex-col items-center justify-center gap-4 text-white mt-96 text-center">
         <Title>{title}</Title>
         <Heading subtitle={subtitle} />
-        <Button size="lg" label="send money" />
+        <Button size="xl" label="send money" />
       </div>
     </Section>
   );

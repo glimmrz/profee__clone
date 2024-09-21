@@ -114,7 +114,7 @@ export default function Home() {
           help@WaltonPay.com or call +357 22 000 253. The support team will
           answer you from 9:00 to 22:00 (UTC+03:00) Monday to Friday.
         </p>
-        <Button label="send money" size="lg" />
+        <Button label="send money" size="xl" />
       </TitleImage>
       <Recognition />
       <TitleImage reverse customStyles="z-[2]" image={ua}>
@@ -123,7 +123,7 @@ export default function Home() {
         </Title>
         <Heading subtitle="Refer our service to your friends, get rewarded when they start sending money." />
 
-        <Button label="send money" size="lg" />
+        <Button label="send money" size="xl" />
       </TitleImage>
       <Reviews />
       <SupportedCountries />

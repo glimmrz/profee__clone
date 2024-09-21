@@ -20,7 +20,7 @@ export default function Features({ features, customStyles = "" }) {
         </div>
       </div>
       <div className="flex items-center justify-center mt-6 md:mt-12">
-        <Button size="lg" label="send money with WaltonPay" />
+        <Button size="xl" label="send money with WaltonPay" />
       </div>
     </Section>
   );

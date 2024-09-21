@@ -62,12 +62,12 @@ export default function Footer() {
             <div className="flex flex-col md:items-end gap-8">
               {/* Appstore links */}
               <div className="flex justify-between md:justify-start gap-4">
-                <div className="h-10 w-32 rounded-lg overflow-hidden">
-                  <CustomImage src={playStore} />
-                </div>
-                <div className="h-10 w-32 rounded-md overflow-hidden">
+                <Link href="#" className="rounded-md overflow-hidden">
+                  <CustomImage src={playStore} alt="" />
+                </Link>
+                <Link href="#" className="rounded-md overflow-hidden">
                   <CustomImage src={appStore} />
-                </div>
+                </Link>
               </div>
 
               {/* Payment cards */}
