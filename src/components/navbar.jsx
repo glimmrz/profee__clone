@@ -84,7 +84,11 @@ export default function Navbar() {
           </div>
 
           <div
-            className="lg:hidden text-white"
+            className={`lg:hidden ${
+              pathname === "/" || pathname.split("/")[1] === "send-money"
+                ? "text-white"
+                : "text-black"
+            }`}
             role="button"
             onClick={sidebar.onOpen}
           >
