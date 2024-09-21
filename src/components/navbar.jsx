@@ -1,9 +1,13 @@
+"use client";
 import Link from "next/link";
 import Container from "./container";
 import Logo from "./logo";
 import Button from "./button";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
+  const pathname = usePathname();
+
   return (
     <nav className="bg-transparent absolute w-full z-50">
       <Container>
@@ -16,16 +20,40 @@ export default function Navbar() {
             <div className="hidden md:block">
               {/* Links */}
               <ul className="flex items-center gap-4">
-                <li className="cursor-pointer text-white text-base first-letter:capitalize hover:text-primary transition-colors duration-300">
+                <li
+                  className={`cursor-pointer text-white text-sm first-letter:capitalize hover:text-primary transition-colors duration-300 ${
+                    pathname.split("/")[1].replace(/-/, " ") === "send money"
+                      ? "bg-mute rounded-md p-2 !text-black hover:!text-primary"
+                      : ""
+                  }`}
+                >
                   <Link href="/send-money">send money</Link>
                 </li>
-                <li className="cursor-pointer text-white text-base first-letter:capitalize hover:text-primary transition-colors duration-300">
+                <li
+                  className={`cursor-pointer text-white text-sm first-letter:capitalize hover:text-primary transition-colors duration-300 ${
+                    pathname.split("/")[1].replace(/-/, " ") === "media"
+                      ? "bg-mute rounded-md p-2 !text-black hover:!text-primary"
+                      : ""
+                  }`}
+                >
                   <Link href="#">media</Link>
                 </li>
-                <li className="cursor-pointer text-white text-base first-letter:capitalize hover:text-primary transition-colors duration-300">
+                <li
+                  className={`cursor-pointer text-white text-sm first-letter:capitalize hover:text-primary transition-colors duration-300 ${
+                    pathname.split("/")[1].replace(/-/, " ") === "blog"
+                      ? "bg-mute rounded-md p-2 !text-black hover:!text-primary"
+                      : ""
+                  }`}
+                >
                   <Link href="#">blog</Link>
                 </li>
-                <li className="cursor-pointer text-white text-base first-letter:capitalize hover:text-primary transition-colors duration-300">
+                <li
+                  className={`cursor-pointer text-white text-sm first-letter:capitalize hover:text-primary transition-colors duration-300 ${
+                    pathname.split("/")[1].replace(/-/, " ") === "about us"
+                      ? "bg-mute rounded-md p-2 !text-black hover:!text-primary"
+                      : ""
+                  }`}
+                >
                   <Link href="#">about us</Link>
                 </li>
               </ul>
