@@ -4,10 +4,13 @@ import Button from "../button";
 import Icon from "../icon";
 import { useSidebar } from "@/hooks/modal-controllers";
 import { useEffect, useState } from "react";
+import { navbarLinks } from "@/lib/static";
+import { useTranslations } from "next-intl";
 
-export default function Sidebar() {
+export default function Sidebar({ locale }) {
   const sidebar = useSidebar();
   const [isSidebarOpen, setIsSidebarOpen] = useState(sidebar.isOpen);
+  const t = useTranslations("NavbarLinks");
 
   useEffect(() => {
     setIsSidebarOpen(sidebar.isOpen);
@@ -49,38 +52,20 @@ export default function Sidebar() {
 
         {/* Links */}
         <ul className="flex flex-col gap-3 mt-3 p-4">
-          <li
-            onClick={handleClose}
-            className="first-letter:capitalize hover:text-slate-400 transition-colors duration-300 text-sm"
-          >
-            <Link className="pt-3 pb-3 h-full w-full block" href="/send-money">
-              send money
-            </Link>
-          </li>
-          <li
-            onClick={handleClose}
-            className="first-letter:capitalize hover:text-slate-400 transition-colors duration-300 text-sm"
-          >
-            <Link className="pt-3 pb-3 h-full w-full block" href="/media">
-              media
-            </Link>
-          </li>
-          <li
-            onClick={handleClose}
-            className="first-letter:capitalize hover:text-slate-400 transition-colors duration-300 text-sm"
-          >
-            <Link className="pt-3 pb-3 h-full w-full block" href="/blog">
-              blog
-            </Link>
-          </li>
-          <li
-            onClick={handleClose}
-            className="first-letter:capitalize hover:text-slate-400 transition-colors duration-300 text-sm"
-          >
-            <Link className="pt-3 pb-3 h-full w-full block" href="/about-us">
-              about us
-            </Link>
-          </li>
+          {navbarLinks.map((link, index) => (
+            <li
+              key={index}
+              onClick={handleClose}
+              className="first-letter:capitalize hover:text-slate-400 transition-colors duration-300 text-sm"
+            >
+              <Link
+                className="pt-3 pb-3 h-full w-full block"
+                href={`/${locale}/${link.href}`}
+              >
+                {t(link.label)}
+              </Link>
+            </li>
+          ))}
         </ul>
 
         {/* Language changer */}

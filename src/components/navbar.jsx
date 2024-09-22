@@ -8,25 +8,7 @@ import Icon from "./icon";
 import { useSidebar } from "@/hooks/modal-controllers";
 import { useTranslations } from "next-intl";
 import LocaleSwitcher from "./locale-switcher";
-
-const navbarLinks = [
-  {
-    label: "send",
-    href: "send-money",
-  },
-  {
-    label: "media",
-    href: "media",
-  },
-  {
-    label: "blog",
-    href: "blog",
-  },
-  {
-    label: "about",
-    href: "about-us",
-  },
-];
+import { navbarLinks } from "@/lib/static";
 
 export default function Navbar({ locale }) {
   const pathname = usePathname();

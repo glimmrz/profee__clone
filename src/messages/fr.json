@@ -1,8 +1,33 @@
 {
   "NavbarLinks": {
-    "send": "Envoyer de l’argent",
-    "media": "Médias",
-    "about": "Nous concernant",
+    "send": "send money",
+    "media": "media",
+    "about": "about us",
     "blog": "blog"
+  },
+  "Hero": {
+    "title": "Reliable and fast way to send money overseas",
+    "subtitle": "Support your loved ones, even if you are far away",
+
+    "ExchangeRateForm": {
+      "rateText": "Conversion rate",
+      "textTwo": "No fee for your first transfer",
+      "textThree": "Arrives instantly",
+      "buttonLabel": "get started"
+    },
+    "FeatureBox": {
+      "BoxOne": {
+        "block": "no hidden",
+        "regular": "fees"
+      },
+      "BoxTwo": {
+        "block": "no registration",
+        "regular": "needed to receive money"
+      },
+      "BoxThree": {
+        "block": "beneficial exchage rate",
+        "regular": ""
+      }
+    }
   }
 }

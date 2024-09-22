@@ -14,7 +14,7 @@ export default async function RootLayout({ children, params }) {
       <body>
         <NextIntlClientProvider messages={messages}>
           <Navbar locale={params.locale} />
-          <Sidebar />
+          <Sidebar locale={params.locale} />
           <main>
             <IframeModal />
             <QrCodeModal />
