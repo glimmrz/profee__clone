@@ -6,8 +6,8 @@ import Button from "./button";
 import { usePathname } from "next/navigation";
 import Icon from "./icon";
 import { useSidebar } from "@/hooks/modal-controllers";
-import LocaleSwitcher from "./locale-switcher/locale-switcher";
 import { useTranslations } from "next-intl";
+import LocaleSwitcher from "./locale-switcher";
 
 const navbarLinks = [
   {
@@ -34,7 +34,13 @@ export default function Navbar({ locale }) {
   const t = useTranslations("NavbarLinks");
 
   return (
-    <nav className="bg-transparent absolute w-full z-50">
+    <nav
+      className={`bg-transparent absolute w-full z-50 ${
+        !pathname.split("/")[2] || pathname.split("/")[2] === "send-money"
+          ? "text-white"
+          : "text-black"
+      }`}
+    >
       <Container>
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-8">
@@ -47,12 +53,7 @@ export default function Navbar({ locale }) {
                 {navbarLinks.map((link, index) => (
                   <li
                     key={index}
-                    className={`cursor-pointer ${
-                      !pathname.split("/")[2] ||
-                      pathname.split("/")[2] === "send-money"
-                        ? "text-white"
-                        : "text-black"
-                    } text-sm first-letter:capitalize hover:text-primary transition-colors duration-300 ${
+                    className={`cursor-pointer text-inherit text-sm first-letter:capitalize hover:text-primary transition-colors duration-300 ${
                       pathname.split("/")[2] === link.href
                         ? "bg-slate-200 rounded-md !text-black hover:!text-primary"
                         : ""
@@ -75,14 +76,10 @@ export default function Navbar({ locale }) {
               <Button variant="outline" label="log in" />
               <Button label="sign up" />
             </div>
-            <LocaleSwitcher />
+            <LocaleSwitcher locale={locale} />
 
             <div
-              className={`lg:hidden ${
-                pathname === "/" || pathname.split("/")[1] === "send-money"
-                  ? "text-white"
-                  : "text-black"
-              }`}
+              className={`lg:hidden text-inherit`}
               role="button"
               onClick={sidebar.onOpen}
             >

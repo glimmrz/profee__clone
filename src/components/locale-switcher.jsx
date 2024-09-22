@@ -14,8 +14,8 @@ import uz from "@/assets/flags/uz.svg";
 import vn from "@/assets/flags/vn.svg";
 import ru from "@/assets/flags/ru.svg";
 import Image from "next/image";
-import Icon from "../icon";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
+import Icon from "./icon";
 
 const lans = [
   {
@@ -31,74 +31,76 @@ const lans = [
   {
     icon: de,
     text: "Deutsch",
-    value: "",
+    value: "de",
   },
   {
     icon: gb,
     text: "English",
-    value: "",
+    value: "en",
   },
   {
     icon: es,
     text: "Español",
-    value: "",
+    value: "es",
   },
   {
     icon: fr,
     text: "Français",
-    value: "",
+    value: "fr",
   },
   {
     icon: it,
     text: "Italiano",
-    value: "",
+    value: "it",
   },
   {
     icon: pl,
     text: "Polska",
-    value: "",
+    value: "pl",
   },
   {
     icon: br,
     text: "Português",
-    value: "",
+    value: "br",
   },
   {
     icon: ro,
     text: "Română",
-    value: "",
+    value: "ro",
   },
   {
     icon: ua,
     text: "Українська",
-    value: "",
+    value: "ua",
   },
   {
     icon: uz,
     text: "O'zbek",
-    value: "",
+    value: "uz",
   },
   {
     icon: vn,
     text: "Tiếng việt",
-    value: "",
+    value: "vn",
   },
 ];
 
-export default function LocaleSwitcher() {
+export default function LocaleSwitcher({ locale }) {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
+  const pathname = usePathname();
 
   const handleLocale = (language) => {
-    router.replace(`/${language}`);
+    const path = pathname.split("/").splice(2).join("/");
+    router.push(`/${language}/${path}`);
   };
 
-  const currentLocale = lans.filter((l) => l.value === "ru");
+  const currentLocale = lans.filter((l) => l.value === locale);
 
   return (
     <div className="relative w-fit">
       <div
-        className="flex items-center gap-2 text-white"
+        className="flex items-center gap-2 text-inherit"
         onClick={() => setIsOpen(!isOpen)}
         role="button"
       >
