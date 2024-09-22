@@ -111,7 +111,7 @@ export default function LocaleSwitcher({ locale }) {
       </div>
 
       {isOpen && (
-        <div className="absolute mt-6 right-0 min-w-[200px] rounded-bl-md rounded-br-md flex flex-col bg-white">
+        <div className="absolute mt-6 right-0 min-w-[200px] rounded-bl-md rounded-br-md flex flex-col bg-white shadow-xl animate-grow">
           {lans.map((lan, i) => (
             <div
               className="flex items-center gap-2 p-2 md:p-4 cursor-pointer hover:bg-slate-200 transition-colors duration-300"

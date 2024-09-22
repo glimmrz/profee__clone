@@ -18,6 +18,21 @@ module.exports = {
       borderRadius: {
         "4xl": "4rem",
       },
+      keyframes: {
+        "scale-up-tr": {
+          "0%": {
+            transform: "scale(0.5)",
+            "transform-origin": "100% 0%",
+          },
+          "100%": {
+            transform: "scale(1)",
+            "transform-origin": "100% 0%",
+          },
+        },
+      },
+      animation: {
+        grow: "scale-up-tr 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) both",
+      },
     },
   },
   plugins: [],
