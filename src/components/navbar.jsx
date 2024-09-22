@@ -6,6 +6,7 @@ import Button from "./button";
 import { usePathname } from "next/navigation";
 import Icon from "./icon";
 import { useSidebar } from "@/hooks/modal-controllers";
+import LocaleSwitcher from "./locale-switcher/locale-switcher";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -89,6 +90,7 @@ export default function Navbar() {
             {/* Buttons and language changer */}
             <Button variant="outline" label="log in" />
             <Button label="sign up" />
+            <LocaleSwitcher />
           </div>
 
           <div
