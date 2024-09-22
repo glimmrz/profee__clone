@@ -3,17 +3,40 @@ import { useTranslations } from "next-intl";
 import Button from "../button";
 import Icon from "../icon";
 import Input from "../input";
+import { useState } from "react";
 
 export default function ExhangeRate() {
+  const [values, setValues] = useState({
+    send: 100,
+    receive: 300,
+  });
   const t = useTranslations("Hero");
+
+  const handleChange = (e) => {
+    setValues({ ...values, [e.target.name]: e.target.value });
+  };
+
+  console.log(values);
 
   return (
     <form className="transparent-white rounded-2xl">
       <div className="p-8">
         <div className="grid gap-8">
           <div className="grid gap-4">
-            <Input label="send" />
-            <Input label="receive" />
+            <Input
+              label="send"
+              name="send"
+              type="number"
+              value={values.send}
+              onChange={handleChange}
+            />
+            <Input
+              label="receive"
+              name="receive"
+              type="number"
+              value={values.receive}
+              onChange={handleChange}
+            />
           </div>
 
           {/* Details */}
