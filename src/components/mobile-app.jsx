@@ -22,7 +22,7 @@ export default function MobileApp() {
       ([entry]) => {
         setIsInView(entry.isIntersecting);
       },
-      { threshold: 0.5 }
+      { threshold: 0 }
     );
 
     if (containerRef.current) {
