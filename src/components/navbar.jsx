@@ -86,23 +86,25 @@ export default function Navbar() {
               </ul>
             </div>
           </div>
-          <div className="hidden lg:flex items-center gap-4">
+          <div className="flex items-center gap-2 md:gap-4">
             {/* Buttons and language changer */}
-            <Button variant="outline" label="log in" />
-            <Button label="sign up" />
+            <div className="hidden lg:flex items-center gap-4">
+              <Button variant="outline" label="log in" />
+              <Button label="sign up" />
+            </div>
             <LocaleSwitcher />
-          </div>
 
-          <div
-            className={`lg:hidden ${
-              pathname === "/" || pathname.split("/")[1] === "send-money"
-                ? "text-white"
-                : "text-black"
-            }`}
-            role="button"
-            onClick={sidebar.onOpen}
-          >
-            <Icon icon="menu" size={28} />
+            <div
+              className={`lg:hidden ${
+                pathname === "/" || pathname.split("/")[1] === "send-money"
+                  ? "text-white"
+                  : "text-black"
+              }`}
+              role="button"
+              onClick={sidebar.onOpen}
+            >
+              <Icon icon="menu" size={28} />
+            </div>
           </div>
         </div>
       </Container>

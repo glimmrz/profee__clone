@@ -112,14 +112,14 @@ export default function LocaleSwitcher() {
         <div className="absolute mt-6 right-0 min-w-[200px] rounded-bl-md rounded-br-md flex flex-col bg-white">
           {lans.map((lan, i) => (
             <div
-              className="flex items-center gap-2 p-4 cursor-pointer hover:bg-slate-200 transition-colors duration-300"
+              className="flex items-center gap-2 p-2 md:p-4 cursor-pointer hover:bg-slate-200 transition-colors duration-300"
               key={i}
               onClick={() => handleLocale(lan.value)}
             >
               <figure className="relative h-6 w-6 rounded-full overflow-hidden">
                 <Image src={lan.icon} alt="" fill />
               </figure>
-              <span>{lan.text}</span>
+              <span className="text-sm">{lan.text}</span>
             </div>
           ))}
         </div>
