@@ -93,10 +93,7 @@ const featuresTwo = {
 export default function Home() {
   return (
     <div>
-      <Hero
-        title="Reliable and fast way to send money overseas"
-        customStyles="md:bg-[url('../assets/hero.webp')]"
-      />
+      <Hero title="title" customStyles="md:bg-[url('../assets/hero.webp')]" />
       <Features features={featuresOne} customStyles="z-[9]" />
       <Example />
       <MobileApp />

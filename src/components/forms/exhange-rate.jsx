@@ -1,9 +1,12 @@
+"use client";
+import { useTranslations } from "next-intl";
 import Button from "../button";
-import Container from "../container";
 import Icon from "../icon";
 import Input from "../input";
 
 export default function ExhangeRate() {
+  const t = useTranslations("Hero");
+
   return (
     <form className="transparent-white rounded-2xl">
       <div className="p-8">
@@ -18,25 +21,28 @@ export default function ExhangeRate() {
             <div className="flex items-center gap-2">
               <Icon icon="stock" size={14} />
               <span className="text-sm">
-                Conversion rate ISK 1 = <strong>GBP 0.005444</strong>
+                {t("ExchangeRateForm.rateText")} ISK 1 ={" "}
+                <strong>GBP 0.005444</strong>
               </span>
             </div>
 
             <div className="flex items-center gap-2">
               <Icon icon="star" size={14} />
-              <span className="text-sm">
-                <strong>No fee</strong> for your first transfer
-              </span>
+              <span className="text-sm">{t("ExchangeRateForm.textTwo")}</span>
             </div>
 
             <div className="flex items-center gap-2">
               <Icon icon="timer" size={14} />
-              <span className="text-sm">Arrives instantly</span>
+              {t("ExchangeRateForm.textThree")}
             </div>
           </div>
 
           {/* Button */}
-          <Button label="get started" size="lg" type="submit" />
+          <Button
+            label={t("ExchangeRateForm.buttonLabel")}
+            size="lg"
+            type="submit"
+          />
         </div>
       </div>
     </form>
