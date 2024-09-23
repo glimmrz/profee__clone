@@ -16,37 +16,12 @@ export default function RegisterForm() {
 
       {/* Main form */}
       <form action="" className="flex flex-col gap-4 mt-8 w-full">
-        <EmailOrPhoneInput />
         <Input label="name" required />
         <Input label="surname" required />
+        <EmailOrPhoneInput />
         <Input label="password" required type="password" />
         <Button label="Sign Up" type="submit" />
       </form>
-
-      <p className="text-xs mt-4">
-        By creating an account, you agree to Tatamax{" "}
-        <Link
-          className="text-primary underline hover:text-variant transition-colors duration-300"
-          href="#"
-        >
-          Conditions of Use & Sale
-        </Link>
-        . Please see our{" "}
-        <Link
-          className="text-primary underline hover:text-variant transition-colors duration-300"
-          href="#"
-        >
-          Privacy Notice
-        </Link>
-        , our{" "}
-        <Link
-          className="text-primary underline hover:text-variant transition-colors duration-300"
-          href="#"
-        >
-          Cookies Notice
-        </Link>
-        .
-      </p>
     </div>
   );
 }

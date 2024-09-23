@@ -4,6 +4,7 @@ import CustomImage from "./custom-image";
 import logo from "@/assets/logo_dark.png";
 import Icon from "./icon";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function AuthWrapper({ params, children }) {
   const router = useRouter();
@@ -52,6 +53,32 @@ export default function AuthWrapper({ params, children }) {
           </div>
         </div>
       </div>
+
+      {/* Notice */}
+      <p className="text-xs mt-4">
+        By creating an account, you agree to Tatamax{" "}
+        <Link
+          className="text-primary underline hover:text-variant transition-colors duration-300"
+          href="#"
+        >
+          Conditions of Use & Sale
+        </Link>
+        . Please see our{" "}
+        <Link
+          className="text-primary underline hover:text-variant transition-colors duration-300"
+          href="#"
+        >
+          Privacy Notice
+        </Link>
+        , our{" "}
+        <Link
+          className="text-primary underline hover:text-variant transition-colors duration-300"
+          href="#"
+        >
+          Cookies Notice
+        </Link>
+        .
+      </p>
     </div>
   );
 }
