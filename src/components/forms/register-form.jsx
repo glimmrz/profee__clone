@@ -11,7 +11,7 @@ export default function RegisterForm() {
 
       {/* Main form */}
       <form action="" className="flex flex-col gap-4 mt-8 w-full">
-        <Input label="email" required type="email" />
+        <Input label="email or phone number" required type="email" />
         <Input label="name" required />
         <Input label="surname" required />
         <Input label="password" required type="password" />

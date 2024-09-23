@@ -4,13 +4,13 @@ import Container from "@/components/container";
 import Heading from "@/components/heading";
 import MediaSection from "@/components/media-section";
 
-export default function Page() {
+export default function Page({ params }) {
   return (
     <Container>
       <div>
         <Heading title="Blog" />
 
-        <div className="mt-8 flex flex-wrap gap-4">
+        <div className="mt-4 mb-8 flex flex-wrap gap-4">
           <CategoryBox />
           <CategoryBox />
           <CategoryBox />
@@ -25,7 +25,7 @@ export default function Page() {
           <CategoryBox />
         </div>
       </div>
-      <MediaSection category="Life in Europe" reverse>
+      <MediaSection category="Life in Europe" reverse locale={params.locale}>
         <MediaCard />
         <MediaCard />
         <MediaCard />

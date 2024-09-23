@@ -3,14 +3,20 @@ import Container from "./container";
 import Heading from "./heading";
 import Icon from "./icon";
 
-export default function MediaSection({ title, category, children, reverse }) {
+export default function MediaSection({
+  title,
+  category,
+  children,
+  reverse,
+  locale,
+}) {
   return (
-    <section>
+    <section className="mt-8 first-of-type:mt-0">
       <Container>
         {title && <Heading title={title} />}
         {category && (
           <Link
-            href={`/blog/categories/${category.replace(/ /g, "-")}`}
+            href={`/${locale}/blog/categories/${category.replace(/ /g, "-")}`}
             className="text-primary flex items-center gap-2"
           >
             <Heading title={category} />
