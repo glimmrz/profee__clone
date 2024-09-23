@@ -18,9 +18,9 @@ export default function Navbar({ locale }) {
 
   return (
     <nav
-      className={`bg-transparent absolute w-full z-50 ${
+      className={`bg-transparent w-full z-50 ${
         !pathname.split("/")[2] || pathname.split("/")[2] === "send-money"
-          ? "text-white"
+          ? "text-white absolute"
           : "text-black"
       }`}
     >
