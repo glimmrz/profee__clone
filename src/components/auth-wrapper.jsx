@@ -14,7 +14,7 @@ export default function AuthWrapper({ params, children }) {
         <CustomImage src={logo} alt="waltonpay" />
       </div>
       {/* Toggle buttons */}
-      <div className="flex justify-between gap-4 w-full p-4 bg-slate-100 rounded-2xl">
+      <div className="flex justify-between gap-4 w-full p-4 bg-slate-100 rounded-2xl mt-8">
         <Button
           label="login"
           variant={params.mode === "login" ? "primary" : "ghost"}
