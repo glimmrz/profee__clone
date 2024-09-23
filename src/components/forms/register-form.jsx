@@ -6,7 +6,10 @@ export default function RegisterForm() {
   return (
     <div className="w-full">
       <div className="text-center font-extrabold">
-        <Heading title="Create Account" subtitle="Sign up to get started!" />
+        <Heading title="Create Account" />
+        <div className="text-slate-500 font-light">
+          <Heading subtitle="Sign up to get started!" />
+        </div>
       </div>
 
       {/* Main form */}

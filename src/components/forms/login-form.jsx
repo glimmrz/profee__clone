@@ -6,7 +6,10 @@ export default function LoginForm() {
   return (
     <div className="w-full">
       <div className="text-center font-extrabold">
-        <Heading title="Welcome" subtitle="Sign in to continue!" />
+        <Heading title="Welcome" />
+        <div className="text-slate-500 font-light">
+          <Heading subtitle="Sign in to continue!" />
+        </div>
       </div>
 
       {/* Main form */}
