@@ -99,7 +99,7 @@ export default function LocaleSwitcher({ locale }) {
   const availableLocales = lans.filter((l) => l.value !== locale);
 
   return (
-    <div className="relative w-fit">
+    <div className="relative w-fit z-50">
       <div
         className="flex items-center gap-2 text-inherit"
         onClick={() => setIsOpen(!isOpen)}

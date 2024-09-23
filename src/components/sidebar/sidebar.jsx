@@ -6,10 +6,12 @@ import { useSidebar } from "@/hooks/modal-controllers";
 import { useEffect, useState } from "react";
 import { navbarLinks } from "@/lib/static";
 import { useTranslations } from "next-intl";
+import { useRouter } from "next/navigation";
 
 export default function Sidebar({ locale }) {
   const sidebar = useSidebar();
   const [isSidebarOpen, setIsSidebarOpen] = useState(sidebar.isOpen);
+  const router = useRouter();
   const t = useTranslations("NavbarLinks");
 
   useEffect(() => {
@@ -46,8 +48,21 @@ export default function Sidebar({ locale }) {
         </div>
         {/* Account Buttons */}
         <div className="flex items-center gap-4 p-4 border-b border-slate-200">
-          <Button variant="outline" label="log in" />
-          <Button label="sign up" />
+          <Button
+            variant="outline"
+            label="log in"
+            onClick={() => {
+              router.push(`/${locale}/auth/login`);
+              handleClose();
+            }}
+          />
+          <Button
+            label="sign up"
+            onClick={() => {
+              router.push(`/${locale}/auth/register`);
+              handleClose();
+            }}
+          />
         </div>
 
         {/* Links */}
