@@ -16,14 +16,13 @@ export default function ExhangeRate() {
     setValues({ ...values, [e.target.name]: e.target.value });
   };
 
-  console.log(values);
-
   return (
     <form className="transparent-white rounded-2xl">
       <div className="p-8">
         <div className="grid gap-8">
           <div className="grid gap-4">
             <Input
+              required
               label="send"
               name="send"
               type="number"
@@ -31,6 +30,7 @@ export default function ExhangeRate() {
               onChange={handleChange}
             />
             <Input
+              required
               label="receive"
               name="receive"
               type="number"

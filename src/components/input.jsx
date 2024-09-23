@@ -1,28 +1,29 @@
 export default function Input({
-  label,
-  name,
-  placeholder,
   type = "text",
+  name,
   required,
-  onChange,
+  label,
+  id,
   value,
+  onChange,
 }) {
   return (
-    <div className="grid gap-1">
-      {label && (
-        <label htmlFor="" className="text-base text-shade capitalize">
-          {label}
-        </label>
-      )}
+    <div className="relative w-full">
       <input
-        onChange={onChange}
         type={type}
-        name={name}
-        placeholder={placeholder}
         required={required}
         value={value}
-        className="p-3 rounded-md outline-0 border border-mute text-base"
+        onChange={onChange}
+        name={name}
+        className="peer p-4 pt-6 rounded-md border border-mute outline-none w-full"
+        placeholder=" "
       />
+      <label
+        htmlFor=""
+        className="absolute capitalize text-shade duration-300 transform -translate-y-3 top-5 left-4 z-10 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-2 peer-focus:scale-75 peer-focus:-translate-y-4 peer-[:not(:placeholder-shown)]:scale-75 peer-[:not(:placeholder-shown)]:-translate-y-4"
+      >
+        {label}
+      </label>
     </div>
   );
 }
