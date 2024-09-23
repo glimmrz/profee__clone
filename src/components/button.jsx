@@ -5,6 +5,7 @@ export default function Button({
   label,
   type = "button",
   icon,
+  secondaryIcon,
   size,
   onClick,
 }) {
@@ -13,6 +14,7 @@ export default function Button({
     outline:
       "bg-transparent border-variant text-variant hover:border-primary hover:text-primary",
     close: "bg-transparent rounded-full",
+    ghost: "bg-transparent hover:bg-primary hover:text-white",
   };
 
   const sizes = {
@@ -24,8 +26,9 @@ export default function Button({
     <button
       type={type}
       onClick={onClick}
-      className={`pt-2 pb-2 pl-6 pr-6 border border-transparent text-base first-letter:capitalize rounded-md transition-colors duration-300 cursor-pointer ${variants[variant]} ${sizes[size]}`}
+      className={`w-full min-w-fit flex items-center justify-center gap-4 pt-2 pb-2 pl-6 pr-6 border border-transparent text-base first-letter:capitalize rounded-md transition-colors duration-300 cursor-pointer ${variants[variant]} ${sizes[size]}`}
     >
+      {secondaryIcon && <Icon icon={secondaryIcon} />}
       {label}
       {icon && <Icon icon={icon} />}
     </button>

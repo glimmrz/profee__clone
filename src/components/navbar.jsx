@@ -3,7 +3,7 @@ import Link from "next/link";
 import Container from "./container";
 import Logo from "./logo";
 import Button from "./button";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import Icon from "./icon";
 import { useSidebar } from "@/hooks/modal-controllers";
 import { useTranslations } from "next-intl";
@@ -12,6 +12,7 @@ import { navbarLinks } from "@/lib/static";
 
 export default function Navbar({ locale }) {
   const pathname = usePathname();
+  const router = useRouter();
   const sidebar = useSidebar();
   const t = useTranslations("NavbarLinks");
 
@@ -55,8 +56,15 @@ export default function Navbar({ locale }) {
           <div className="flex items-center gap-2 md:gap-4">
             {/* Buttons and language changer */}
             <div className="hidden lg:flex items-center gap-4">
-              <Button variant="outline" label="log in" />
-              <Button label="sign up" />
+              <Button
+                variant="outline"
+                label="log in"
+                onClick={() => router.push(`/${locale}/auth/login`)}
+              />
+              <Button
+                label="sign up"
+                onClick={() => router.push(`/${locale}/auth/register`)}
+              />
             </div>
             <LocaleSwitcher locale={locale} />
 
