@@ -16,7 +16,7 @@ export default function LoginForm() {
       <form action="" className="flex flex-col gap-4 mt-8 w-full">
         <Input label="email or phone" required type="email" />
         <Input label="password" required type="password" />
-        <Button label="Sign Up" />
+        <Button label="login" />
       </form>
     </div>
   );

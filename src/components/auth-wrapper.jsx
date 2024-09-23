@@ -39,7 +39,7 @@ export default function AuthWrapper({ params, children }) {
             role="button"
             className="w-full flex items-center justify-center capitalize gap-4 pt-2 pb-2 pl-6 pr-6 border border-slate-100 hover:bg-slate-100 text-base first-letter:capitalize rounded-md transition-colors duration-300 cursor-pointer"
           >
-            <Icon icon="google" />
+            <Icon size={28} icon="apple" />
             <span>sign in with apple</span>
           </div>
           {/* Google */}
@@ -47,7 +47,7 @@ export default function AuthWrapper({ params, children }) {
             role="button"
             className="w-full flex items-center justify-center capitalize gap-4 pt-2 pb-2 pl-6 pr-6 border border-slate-100 hover:bg-slate-100 text-base first-letter:capitalize rounded-md transition-colors duration-300 cursor-pointer"
           >
-            <Icon icon="google" />
+            <Icon size={28} icon="google" />
             <span>continue with google</span>
           </div>
         </div>
