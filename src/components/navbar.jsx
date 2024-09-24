@@ -9,6 +9,7 @@ import { useSidebar } from "@/hooks/modal-controllers";
 import { useTranslations } from "next-intl";
 import LocaleSwitcher from "./locale-switcher";
 import { navbarLinks } from "@/lib/static";
+import { useMemo } from "react";
 
 export default function Navbar({ locale }) {
   const pathname = usePathname();
@@ -16,12 +17,15 @@ export default function Navbar({ locale }) {
   const sidebar = useSidebar();
   const t = useTranslations("NavbarLinks");
 
+  const isFontBlack = useMemo(
+    () => !pathname.split("/")[2] || pathname.split("/")[2] === "send-money",
+    [pathname]
+  );
+
   return (
     <nav
       className={`bg-transparent w-full z-50 ${
-        !pathname.split("/")[2] || pathname.split("/")[2] === "send-money"
-          ? "text-white absolute"
-          : "text-black"
+        isFontBlack ? "text-white absolute" : "text-black"
       }`}
     >
       <Container>

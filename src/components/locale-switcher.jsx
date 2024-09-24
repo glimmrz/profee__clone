@@ -1,5 +1,5 @@
 "use client";
-import { useCallback, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import br from "@/assets/flags/br.svg";
 import cz from "@/assets/flags/cz.svg";
 import de from "@/assets/flags/de.svg";
@@ -95,8 +95,14 @@ export default function LocaleSwitcher({ locale }) {
     router.push(`/${language}/${path}`);
   };
 
-  const currentLocale = lans.filter((l) => l.value === locale);
-  const availableLocales = lans.filter((l) => l.value !== locale);
+  const currentLocale = useMemo(
+    () => lans.filter((l) => l.value === locale),
+    [locale]
+  );
+  const availableLocales = useMemo(
+    () => lans.filter((l) => l.value !== locale),
+    [locale]
+  );
 
   return (
     <div className="relative w-fit z-50">

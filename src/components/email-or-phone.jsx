@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Select from "./select";
 import Input from "./input";
 
 const countries = [
@@ -42,7 +41,7 @@ export default function EmailOrPhoneInput({ label, required }) {
           value={value}
           onChange={(e) => setValue(e.target.value)}
           customStyles={`${inputType === "tel" ? "!pl-[68px]" : ""} border-0`}
-          label={inputType === "tel" ? "phone" : "email or phone number"}
+          label={inputType === "tel" ? "phone number" : "email or phone number"}
           labelStyles={inputType === "tel" ? "left-[68px]" : ""}
         />
       </div>
