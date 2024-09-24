@@ -5,6 +5,10 @@ import ExhangeRate from "./forms/exhange-rate";
 import Heading from "./heading";
 import Section from "./section";
 import Title from "./title";
+import Link from "next/link";
+import CustomImage from "./custom-image";
+import appstore from "@/assets/appstore.png";
+import playstore from "@/assets/playstore.png";
 
 export default function Hero({ title, customStyles }) {
   const t = useTranslations("Hero");
@@ -37,6 +41,15 @@ export default function Hero({ title, customStyles }) {
         <div>
           {/* Exchange rate form */}
           <ExhangeRate />
+
+          <div className="grid grid-cols-2 gap-2 mt-4">
+            <Link href="#" className="rounded-md overflow-hidden">
+              <CustomImage src={playstore} alt="" />
+            </Link>
+            <Link href="#" className="rounded-md overflow-hidden">
+              <CustomImage src={appstore} />
+            </Link>
+          </div>
         </div>
       </div>
     </Section>

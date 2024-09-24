@@ -1,4 +1,3 @@
-import Image from "next/image";
 import FeatureBox from "./feature-box";
 import ExhangeRate from "./forms/exhange-rate";
 import Heading from "./heading";

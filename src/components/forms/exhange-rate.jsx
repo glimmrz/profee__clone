@@ -35,7 +35,7 @@ export default function ExhangeRate() {
               label="receive"
               name="receive"
               type="number"
-              value={values.send}
+              value={values.receive}
               onChange={handleChange}
             />
           </div>
