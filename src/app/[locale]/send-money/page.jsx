@@ -110,7 +110,7 @@ export default function Home() {
         subtitle="Do not need to sign up to get the money. Ask them to give you their account's details and... to relax."
         customStyles="bg-[url('../assets/care-bg.webp')] !z-[4] bg-right"
       />
-      <Recognition />
+      {/* <Recognition /> */}
       <TitleImage reverse customStyles="z-[2]" image={ua}>
         <Title>
           Earn with <br /> <span className="text-primary">WaltonPay</span>

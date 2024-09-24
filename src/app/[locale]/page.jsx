@@ -113,7 +113,7 @@ export default function Home() {
         </p>
         <Button label="send money" size="xl" />
       </TitleImage>
-      <Recognition />
+      {/* <Recognition /> */}
       <TitleImage reverse customStyles="z-[2]" image={ua}>
         <Title>
           Earn with <br /> <span className="text-primary">WaltonPay</span>
