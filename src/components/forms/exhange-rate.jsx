@@ -4,6 +4,7 @@ import Button from "../button";
 import Icon from "../icon";
 import Input from "../input";
 import { useState } from "react";
+import InputWithCurrencyDropdown from "../input-with-currency-dropdown";
 
 export default function ExhangeRate() {
   const [values, setValues] = useState({
@@ -21,7 +22,7 @@ export default function ExhangeRate() {
       <div className="p-8">
         <div className="grid gap-8">
           <div className="grid gap-4">
-            <Input
+            <InputWithCurrencyDropdown
               required
               label="send"
               name="send"
@@ -29,12 +30,12 @@ export default function ExhangeRate() {
               value={values.send}
               onChange={handleChange}
             />
-            <Input
+            <InputWithCurrencyDropdown
               required
               label="receive"
               name="receive"
               type="number"
-              value={values.receive}
+              value={values.send}
               onChange={handleChange}
             />
           </div>

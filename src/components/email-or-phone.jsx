@@ -40,7 +40,7 @@ export default function EmailOrPhoneInput({ label, required }) {
           required={required}
           value={value}
           onChange={(e) => setValue(e.target.value)}
-          customStyles={`${inputType === "tel" ? "!pl-[68px]" : ""} border-0`}
+          customStyles={`${inputType === "tel" ? "!pl-[68px]" : ""} !border-0`}
           label={inputType === "tel" ? "phone number" : "email or phone number"}
           labelStyles={inputType === "tel" ? "left-[68px]" : ""}
         />

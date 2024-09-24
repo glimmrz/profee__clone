@@ -2,6 +2,7 @@ import {
   Activity,
   ArrowRight,
   ChevronDown,
+  ChevronUp,
   Eye,
   Facebook,
   Instagram,
@@ -22,6 +23,7 @@ const Icons = {
   eye: Eye,
   menu: Menu,
   chevronDown: ChevronDown,
+  chevronUp: ChevronUp,
   star: (props) => (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" {...props}>
       <path
